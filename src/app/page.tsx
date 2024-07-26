@@ -5,7 +5,7 @@ import NewsLine from "./components/NewsLine";
 import HyperLink from "./components/HyperLink";
 import Image from "next/image";
 
-const azeret_mono = Azeret_Mono({ weight: "200", subsets: ['latin'] });
+const azeret_mono = Azeret_Mono({ weight: ["200","400"], subsets: ['latin'] });
 const jockey = Jockey_One({ weight: "400", subsets: ['latin'] });
 import React from 'react';
 
@@ -74,12 +74,12 @@ export default function Home() {
             <div className={twMerge("bg-black text-white/50 w-fit px-1 text-sm", azeret_mono.className)}>Email:bytez@seas.upenn.edu</div>
           </div>
           <div className="mx-4 mt-4 md:mx-8 md:mt-0 w-auto">
-            <div className={twMerge(azeret_mono.className, "mx-auto text-white/50  font-light text-sm leading-relax")}>
-              <p className="my-2">I am a first-year CIS PhD student at University of Pennsylvania, advised by Professor Ryan Marcus.</p>
+            <div className={twMerge(azeret_mono.className, "mx-auto text-white/50  font-light text-sm leading-loose")}>
+              <p className="my-2">Hi there! I am a first-year CIS PhD student at the University of Pennsylvania, advised by Professor <HyperLink label="Ryan Marcus" link="https://rmarcus.info/blog/" />.</p>
               <p className="my-2">Previously, I received my bachelor’s degree in CS from Tianjin University.</p>
-              <p className="my-2">My research interet includes machine programming and applying ML algorithms to build self-evolvable software systems(especially databases).</p>
-              <p className="my-2">Feel free to leave me an email if we share the same interests!</p>
-              <p>Please also check my <HyperLink label="Linkedin" link="Linkedin.com" />, <HyperLink label="Github" link="https://github.com" />, and <HyperLink label="X.com" link="https://x.com" /></p>
+              <p className="my-2 font-black">My research interet includes machine programming and applying ML algorithms to build self-evolvable software systems(especially databases).</p>
+              <p className="my-2">I love building cool things. Feel free to leave me an email if we&apos;re sharing the same interests!</p>
+              <p>Please also check my <HyperLink label="Linkedin" link="http://www.linkedin.com/in/upennzijiezhao" />, <HyperLink label="Github" link="https://github.com/bytezzz" />, and <HyperLink label="X.com" link="https://x.com" /></p>
             </div>
           </div>
 
@@ -88,9 +88,8 @@ export default function Home() {
           <div className="text-white/90 font-light text-4xl">NEWS</div>
         </SelectingBox>
 
-        <NewsLine date="2024.06.24" content="I received my Bachelor's From TJU!" />
-        <NewsLine date="2024.06.24" content="Our Paper Got Received By XXX" />
-        <NewsLine date="2024.06.24" content="HelloWorld" />
+        <NewsLine date="2024.07.26" content="My new portfolio website is launched!" />
+        <NewsLine date="2024.07.06" content="I received my bachelor's degree from Tianjin University." />
 
       </div>
     </main>
