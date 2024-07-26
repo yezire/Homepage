@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 import SelectingBox from "./components/SelectingBox";
 import NewsLine from "./components/NewsLine";
 import HyperLink from "./components/HyperLink";
+import Image from "next/image";
 
 const azeret_mono = Azeret_Mono({weight:"200",subsets:['latin']});
 const jockey = Jockey_One({weight:"400", subsets:['latin']});
@@ -64,13 +65,15 @@ export default function Home() {
       </div> */}
       <div className="flex flex-col md:flex-row items-center">
         <div className="flex flex-col my-auto w-1/3 min-w-max md:ml-2 md:mr-5">
-          <div className="my-5 w-40 h-40 bg-white ml-8 mr-auto"></div>
+          <div className="my-3 mr-auto">
+            <Image src="/selfie.jpg" alt="Selfie" width={250} height={250}/>
+          </div>
           <div className={twMerge("bg-black text-white w-fit px-1 text-2xl", jockey.className)}>Zijie Zhao</div>
           <div className={twMerge("bg-white text-black w-fit px-1 mt-1 text-xl leading-none text-nowrap", jockey.className)}>University of Pennsylvania</div>
           <div className={twMerge("bg-black text-white/50 w-fit px-1 mt-1 text-sm font-light", azeret_mono.className)}>Office:TBA</div>
           <div className={twMerge("bg-black text-white/50 w-fit px-1 text-sm", azeret_mono.className)}>Email:bytez@seas.upenn.edu</div>
         </div>
-        <div className="mx-4 md:mx-8 w-auto">
+        <div className="mx-4 mt-4 md:mx-8 md:mt-0 w-auto">
           <div className={twMerge(azeret_mono.className,"mx-auto text-white/50  font-light text-sm leading-relax")}>
           <p className="my-2">I am a first-year CIS PhD student at University of Pennsylvania, advised by Professor Ryan Marcus.</p>
           <p className="my-2">Previously, I received my bachelor’s degree in CS from Tianjin University.</p>
