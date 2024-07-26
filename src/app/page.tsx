@@ -48,7 +48,7 @@ const DiagonalSquare = ({ size = 100, color = 'white' }) => {
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-full">
-      <div className="md:sticky md:top-0 w-full h-fit bg-bgblack pb-8">
+      <div className="md:sticky md:top-0 w-full h-fit bg-bgblack md:pb-8">
         <div className="mt-8 md:m-14 md:mb-0 flex flex-row">
           <div className="hidden md:block">
             <DiagonalSquare size={60} />
