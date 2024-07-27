@@ -17,8 +17,10 @@ const config: Config = {
         '1/6': '16.666667%',
       },
       colors:{
-        'bgblack' : '#1d1c1c',
-        'newsblue' : '#0385a3'
+        'bgblack' : '#242020',
+        'newsblue' : '#0385bc',
+        'textyellow': '#f7ecd3',
+        'myorange':'#e45d2c'
       }
     },
   },
