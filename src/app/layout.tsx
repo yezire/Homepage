@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zijie Zhao",
-  description: "Zijie's Portfolio",
+  title: "Zhirui Ye",
+  description: "Zhirui's Portfolio",
 };
 
 export default function RootLayout({
